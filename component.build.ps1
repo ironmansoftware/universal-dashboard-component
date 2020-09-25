@@ -14,6 +14,7 @@ task Build {
 	New-Item -Path $OutputPath -ItemType Directory
 
 	Copy-Item $PSScriptRoot\public\*.* $OutputPath
+	Copy-Item $PSScriptRoot\UniversalDashboard.Component.psd1 $OutputPath
 	Copy-Item $PSScriptRoot\UniversalDashboard.Component.psm1 $OutputPath
 }
 
